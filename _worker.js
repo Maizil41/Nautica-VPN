@@ -3,8 +3,8 @@ import { connect } from "cloudflare:sockets";
 // import { Buffer } from "node:buffer";
 
 // Variables
-const rootDomain = "foolvpn.me"; // Ganti dengan domain utama kalian
-const serviceName = "nautica"; // Ganti dengan nama workers kalian
+const rootDomain = "mutiara-wrt.biz.id"; // Ganti dengan domain utama kalian
+const serviceName = "vpn"; // Ganti dengan nama workers kalian
 const apiKey = "71101f42675763d5453500bd1ca141f5b0d6b"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "maizilpc7@gmail.com"; // Ganti dengan email yang kalian gunakan
 const accountID = "ee7238e1c49f1c619ee1d1fbbd0a2ef7"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
