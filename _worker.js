@@ -4,11 +4,11 @@ import { connect } from "cloudflare:sockets";
 
 // Variables
 const rootDomain = "mutiara-wrt.biz.id"; // Ganti dengan domain utama kalian
-const serviceName = "vpn"; // Ganti dengan nama workers kalian
-const apiKey = ""; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
-const apiEmail = ""; // Ganti dengan email yang kalian gunakan
-const accountID = ""; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
-const zoneID = ""; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const serviceName = "worker"; // Ganti dengan nama workers kalian
+const apiKey = "71101f42675763d5453500bd1ca141f5b0d6b"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
+const apiEmail = "maizilpc7@gmail.com"; // Ganti dengan email yang kalian gunakan
+const accountID = "ee7238e1c49f1c619ee1d1fbbd0a2ef7"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const zoneID = "e0595b1c547a22193cfb626fa2ce50bf"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 let isApiReady = false;
 let proxyIP = "";
 let cachedProxyList = [];
@@ -390,7 +390,7 @@ export default {
         }
       }
 
-      const targetReverseProxy = env.REVERSE_PROXY_TARGET || "example.com";
+      const targetReverseProxy = env.REVERSE_PROXY_TARGET || "maizil41.github.io";
       return await reverseProxy(request, targetReverseProxy);
     } catch (err) {
       return new Response(`An error occurred: ${err.toString()}`, {
